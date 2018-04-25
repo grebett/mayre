@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: 400;
+      src: url(/assets/chivo.ttf) format('ttf');
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #video {
+      background: black;
+      padding-bottom: 300px;
+    }
+
+    #logo {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    #logo-image {
+      width: 200px;
+      filter: brightness(100);
+    }
+
+    #logo-text {
+      font-family: 'Chivo', arial;
+      width: 900px;
+      padding: 10px;
+      font-size: 30px;
+      letter-spacing: 5px;
+      transition: all 1s ease;
+      text-align: justify;
+      color: white;
+      text-shadow: 1px 0px 0px rgb(0, 0, 0, 0.1);
+    }
+
+    .slide {
+      display: flex;
+      background-attachment: fixed;
+      background-size: cover;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    #home {
+      background-image: url('./assets/home.jpg');
+    }
+
+    #collier1 {
+      background-image: url('./assets/01_collier_01.jpg');
+    }
+
+    #collier2 {
+      background-image: url('./assets/02_collier_02.jpg');
+    }
+
+    #bracelet1 {
+      background-image: url('./assets/03_bracelet_01.jpg');
+    }
+
+    #bracelet2 {
+      background-image: url('./assets/04_bracelet_02.jpg');
+    }
+
+    #bracelet3 {
+      background-image: url('./assets/05_bracelet_03.jpg');
+    }
+
+    #bague1 {
+      background-image: url('./assets/06_bague_01.jpg');
+    }
+
+    #bague2 {
+      background-image: url('./assets/07_bague_02.jpg');
+    }
+
+    #bague3 {
+      background-image: url('./assets/08_bague_03.jpg');
+    }
+
+    #bague4 {
+      background-image: url('./assets/09_bague_04.jpg');
+    }
+
+    #bague-loop {
+      background-image: url('./assets/10_bague_loop.jpg');
+    }
+
+    #boucles1 {
+      background-image: url('./assets/11_boucles.jpg');
+    }
+
+
+    @media all and (max-width: 780px) {
+      .slide {
+        display: flex;
+        background-attachment: scroll;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+
+      #video {
+        display: block;
+      }
+
+      #video video {
+        margin-bottom: 30px;
+      }
+
+      #logo-text {
+        font-family: 'Chivo', arial;
+        width: 900px;
+        padding: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        transition: all 1s ease;
+        text-align: justify;
+        color: white;
+        text-shadow: 1px 0px 0px rgb(0, 0, 0, 0.1);
+      }
+
+      #home {
+        background-image: url('./assets/ihome.jpg');
+      }
+
+      #collier1 {
+        background-image: url('./assets/i01_collier_01.jpg');
+      }
+
+      #collier2 {
+        background-image: url('./assets/i02_collier_02.jpg');
+      }
+
+      #bracelet1 {
+        background-image: url('./assets/i03_bracelet_01.jpg');
+      }
+
+      #bracelet2 {
+        background-image: url('./assets/i04_bracelet_02.jpg');
+      }
+
+      #bracelet3 {
+        background-image: url('./assets/i05_bracelet_03.jpg');
+      }
+
+      #bague1 {
+        background-image: url('./assets/i06_bague_01.jpg');
+      }
+
+      #bague2 {
+        background-image: url('./assets/i07_bague_02.jpg');
+      }
+
+      #bague3 {
+        background-image: url('./assets/i08_bague_03.jpg');
+      }
+
+      #bague4 {
+        background-image: url('./assets/i09_bague_04.jpg');
+      }
+
+      #bague-loop {
+        background-image: url('./assets/i10_bague_loop.jpg');
+      }
+
+      #boucles1 {
+        background-image: url('./assets/i11_boucles.jpg');
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="logo">
+    <img id="logo-image" class="visible" src="./assets/logo.png" alt="logo" />
+    <div id="logo-text" class="hidden">
+      <p>
+        Puda et molessi qui denient a doluptasit, si corenih icidiscim quiatur as doloriame milis accabor ionsequamus.<br />
+        Moluptatur, aut elest explandae cum denis ditatectotat quae voluptatum fugitat.<br />
+        Temporum expe volum nos et, totam velit eles quasped que nos aut iducius con conecab orepro od ma sectemperum quas nes exped eosa quo tectota dessiti re nisciantio molest volorru mquiae sa quam iliti doluptatem.<br/>
+      </p>
+      <p style="margin-top: 30px; display: flex; filter: brightness(100); justify-content: space-between">
+        <a href="mailto:hi@mayre.fr">
+          <img width="30" src="./assets/mayre-logos-mail.png">
+        </a>
+        <a href="http://www.mayeulreignault.com">
+          <img width="30" src="./assets/mayre-logos-smile.png">
+        </a>
+        <a href="https://www.instagram.com/mayre_paris/">
+          <img width="30" src="./assets/mayre-logos-insta.png">
+        </a>
+      </p>
+    </div>
+  </div>
+  <div id="home" class="slide">
+  </div>
+  <div id="collier1" class="slide">
+  </div>
+  <div id="collier2" class="slide">
+  </div>
+  <div id="bracelet1" class="slide">
+  </div>
+  <div id="bracelet2" class="slide">
+  </div>
+  <div id="bracelet3" class="slide">
+  </div>
+  <div id="bague1" class="slide">
+  </div>
+  <div id="bague2" class="slide">
+  </div>
+  <div id="bague3" class="slide">
+  </div>
+  <div id="bague4" class="slide">
+  </div>
+  <div id="bague-loop" class="slide">
+  </div>
+  <div id="boucles1" class="slide">
+  </div>
+  <div id="video" class="slide">
+    <video autoplay playsinline loop muted width="100%" src="./assets/video1.MOV" heigth="100%">
+    </video>
+    <video autoplay playsinline loop muted width="100%" src="./assets/video2.MOV" heigth="100%">
+    </video>
+  </div>
+
+  <script>
+    function toggleVisible(element) {
+      element.classList.toggle('hidden');
+    }
+
+    function toggleBoth() {
+      toggleVisible(logo);
+      toggleVisible(text);
+    }
+
+    var logo = document.getElementById('logo-image');
+    var text = document.getElementById('logo-text');
+    logo.addEventListener('mouseover', toggleBoth);
+    text.addEventListener('mouseout', toggleBoth);
+    logo.addEventListener('click', toggleBoth);
+    text.addEventListener('click', toggleBoth);
+    text.style.marginTop
+
+  </script>
+</body>
+
+</html>
